@@ -1,0 +1,117 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f7f8fc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    width: 98%;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Styling */
+.todo-app h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
+    background: #1b821e;
+    color: #fff;
+    position: relative;
+}
+
+.todo-app h2 img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+/* Input Row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.row input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.row button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #0e830f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.row button:hover {
+    background: #44ad4a;
+}
+
+/* Task List Styling */
+#list-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#list-container li:hover {
+    background: #f9f9f9;
+}
+
+#list-container li.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+#list-container li span {
+    font-size: 18px;
+    color: #ff6347;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+#list-container li span:hover {
+    color: #e53935;
+}
